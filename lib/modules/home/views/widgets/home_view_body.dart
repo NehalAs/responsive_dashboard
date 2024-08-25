@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:responsive/modules/home/views/widgets/adaptive_layout.dart';
+import 'package:responsive/shared/adaptive_layout.dart';
 import 'package:responsive/modules/home/views/widgets/desktop_layout.dart';
 import 'package:responsive/modules/home/views/widgets/mobile_layout.dart';
 import 'package:responsive/modules/home/views/widgets/tablet_layout.dart';

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive/modules/adaptive_dashboard/views/adaptive_dashboard_view.dart';
 import 'package:responsive/modules/home/views/home_screen.dart';
 
 
@@ -11,9 +12,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: AdaptiveDashboardView(),
     );
   }
 }
