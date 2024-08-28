@@ -26,3 +26,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
+    - assets/svgs/
+  fonts:
+    - family: montserrat
+      fonts:
+        - asset: assets/fonts/Montserrat-VariableFont_wght.ttf

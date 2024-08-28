@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive/modules/adaptive_dashboard/views/adaptive_dashboard_view.dart';
 import 'package:responsive/modules/home/views/home_screen.dart';
+import 'package:responsive/utils/app_ui.dart';
 
 
 void main() {
@@ -12,9 +13,13 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AdaptiveDashboardView(),
+      theme: ThemeData(
+        fontFamily: 'Montserrat',
+        scaffoldBackgroundColor: AppUI.whiteFA,
+      ),
+      home: const AdaptiveDashboardView(),
     );
   }
 }

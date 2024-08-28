@@ -2,22 +2,22 @@
 class Assets {
   Assets._();
 
-  static const String generatedAssets = 'lib/generated/assets.dart';
-  static const String libMain = 'lib/main.dart';
-  static const String sharedAdaptiveLayout = 'lib/shared/adaptive_layout.dart';
-  static const String utilsAppUtil = 'lib/utils/app_util.dart';
-  static const String viewsHomeScreen = 'lib/modules/home/views/home_screen.dart';
-  static const String widgetsCustomDesktopSideBar = 'lib/modules/home/views/widgets/custom_desktop_side_bar.dart';
-  static const String widgetsCustomListTileItem = 'lib/modules/home/views/widgets/custom_list_tile_item.dart';
-  static const String widgetsCustomSliverGrid = 'lib/modules/home/views/widgets/custom_sliver_grid.dart';
-  static const String widgetsCustomSliverList = 'lib/modules/home/views/widgets/custom_sliver_list.dart';
-  static const String widgetsDesktopLayout = 'lib/modules/home/views/widgets/desktop_layout.dart';
-  static const String widgetsDrawerItem = 'lib/modules/home/views/widgets/drawer_item.dart';
-  static const String widgetsGreyContainerItem = 'lib/modules/home/views/widgets/grey_container_item.dart';
-  static const String widgetsHomeViewBody = 'lib/modules/home/views/widgets/home_view_body.dart';
-  static const String widgetsHorizontalListView = 'lib/modules/home/views/widgets/horizontal_list_view.dart';
-  static const String widgetsMobileLayout = 'lib/modules/home/views/widgets/mobile_layout.dart';
-  static const String widgetsTabletLayout = 'lib/modules/home/views/widgets/tablet_layout.dart';
-  static const String widgetsWhiteContainerItem = 'lib/modules/home/views/widgets/white_container_item.dart';
+  static const String fontsMontserratVariableFontWght = 'assets/fonts/Montserrat-VariableFont_wght.ttf';
+  static const String imagesLogo = 'assets/images/logo.png';
+  static const String svgsCardReceive = 'assets/svgs/card-receive.svg';
+  static const String svgsCardSend = 'assets/svgs/card-send.svg';
+  static const String svgsCategory2 = 'assets/svgs/category-2.svg';
+  static const String svgsChart2 = 'assets/svgs/chart-2.svg';
+  static const String svgsConvertCard = 'assets/svgs/convert-card.svg';
+  static const String svgsGallery = 'assets/svgs/gallery.svg';
+  static const String svgsGraph = 'assets/svgs/graph.svg';
+  static const String svgsJosua = 'assets/svgs/josua.svg';
+  static const String svgsLekan = 'assets/svgs/lekan.svg';
+  static const String svgsLogout = 'assets/svgs/logout.svg';
+  static const String svgsMadrani = 'assets/svgs/madrani.svg';
+  static const String svgsMaskGroup = 'assets/svgs/mask-group.svg';
+  static const String svgsMoneys = 'assets/svgs/moneys.svg';
+  static const String svgsSetting2 = 'assets/svgs/setting-2.svg';
+  static const String svgsWallet2 = 'assets/svgs/wallet-2.svg';
 
 }
