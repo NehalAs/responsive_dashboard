@@ -2,7 +2,7 @@
 class Assets {
   Assets._();
 
-  static const String fontsMontserratVariableFontWght = 'assets/fonts/Montserrat-VariableFont_wght.ttf';
+  static const String fontsMontserratRegular = 'assets/fonts/Montserrat-Regular.ttf';
   static const String imagesLogo = 'assets/images/logo.png';
   static const String svgsCardReceive = 'assets/svgs/card-receive.svg';
   static const String svgsCardSend = 'assets/svgs/card-send.svg';

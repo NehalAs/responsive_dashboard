@@ -7,8 +7,10 @@ environment:
   sdk: ^3.5.0
 
 dependencies:
+  cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  flutter_svg: ^2.0.10+1
 
 dev_dependencies:
   flutter_test:
@@ -30,4 +32,4 @@ flutter:
   fonts:
     - family: montserrat
       fonts:
-        - asset: assets/fonts/Montserrat-VariableFont_wght.ttf
+        - asset: assets/fonts/Montserrat-Regular.ttf
