@@ -21,13 +21,21 @@ class UserInfoItem extends StatelessWidget {
       elevation: 0,
       child: ListTile(
           leading: CustomSvg(icon: icon),
-          title: Text(
-            title,
-            style: Styles.textStyle16w600(),
+          title: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(
+              title,
+              style: Styles.textStyle16w600(context),
+            ),
           ),
-          subtitle: Text(
-            subTitle,
-            style: Styles.textStyle12w400(),
+          subtitle: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(
+              subTitle,
+              style: Styles.textStyle12w400(context),
+            ),
           )),
     );
   }

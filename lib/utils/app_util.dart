@@ -9,14 +9,14 @@ class AppUtil{
     double scaleFactor = getScaleFactor(context);
     double responsiveFontSize = scaleFactor * fontSize;
     double lowerLimit = fontSize * 0.8;
-    double upperLimit = fontSize * 1.2;
+    double upperLimit = fontSize * 1.1;
     return responsiveFontSize.clamp(lowerLimit, upperLimit);
   }
 
   static double getScaleFactor(BuildContext context) {
     //mobile =400
     //tablet = 700
-    //desktop = 100
+    //desktop = 1000
     double width = MediaQuery.sizeOf(context).width;
 
     if (width < 600) {
@@ -24,7 +24,7 @@ class AppUtil{
     } else if (width < 900) {
       return width / 700;
     } else {
-      return width / 100;
+      return width / 1000;
     }
   }
 }

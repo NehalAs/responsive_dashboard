@@ -14,9 +14,13 @@ class SideMenuItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: CustomSvg(icon: item.icon),
-      title: Text(
-        item.title,
-        style: Styles.textStyle16w400().copyWith(color:isSelected?AppUI.blueF2:null),
+      title: FittedBox(
+        fit: BoxFit.scaleDown,
+        alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          item.title,
+          style: Styles.textStyle16w400(context).copyWith(color:isSelected?AppUI.blueF2:null),
+        ),
       ),
       trailing: isSelected?Container(
         width: 3.27,

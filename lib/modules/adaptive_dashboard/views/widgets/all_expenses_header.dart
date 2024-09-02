@@ -8,7 +8,7 @@ class AllExpensesHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text('All Expenses',style: Styles.textStyle20w600(),),
+        Text('All Expenses',style: Styles.textStyle20w600(context),),
         const Spacer(),
         Container(
           padding: const EdgeInsets.all(12),
@@ -21,11 +21,11 @@ class AllExpensesHeader extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Text('Monthly',style: Styles.textStyle16w500(),),
+              Text('Monthly',style: Styles.textStyle16w500(context),),
              const SizedBox(width: 18,),
               Transform.rotate(
                   angle: 1.57079633,
-                  child: const Icon(Icons.arrow_forward_ios_rounded))
+                  child: const Icon(Icons.arrow_forward_ios_rounded,))
             ],
           ),
         )
