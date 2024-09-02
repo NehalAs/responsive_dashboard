@@ -14,7 +14,6 @@ class AllExpenses extends StatelessWidget {
           color: AppUI.white,
           borderRadius: BorderRadius.circular(12),
       ),
-      margin: const EdgeInsets.all(24),
       padding: const EdgeInsets.all(20),
       child: const Column(
         children: [

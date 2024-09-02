@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive/modules/adaptive_dashboard/views/widgets/all_expenses.dart';
+import 'package:responsive/modules/adaptive_dashboard/views/widgets/quick_invoice_section.dart';
 import 'package:responsive/modules/adaptive_dashboard/views/widgets/side_menu.dart';
 
 class DashboardDesktopLayout extends StatelessWidget {
@@ -7,14 +8,28 @@ class DashboardDesktopLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Row(
+    return Row(
       children: [
-        Expanded(child: SideMenu()),
-        Expanded(
+        const Expanded(
+            flex: 1,
+            child: SideMenu()),
+        const Expanded(
             flex: 3,
+            child: Padding(
+              padding: EdgeInsets.all(24),
+              child: Column(
+                children: [
+                  AllExpenses(),
+                  SizedBox(height: 24,),
+                  QuickInvoiceSection(),
+                ],
+              ),
+            )),
+        Expanded(
+            flex: 2,
             child: Column(
               children: [
-                AllExpenses(),
+                Container()
               ],
             )),
       ],

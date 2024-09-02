@@ -42,7 +42,7 @@ class ExpensesItem extends StatelessWidget {
                 child: CustomSvg(icon: icon,),
               ),
               const Spacer(),
-              Icon(Icons.arrow_forward_ios_rounded, color: blueCard ? AppUI.white : AppUI.blue61,)
+              Expanded(child: Icon(Icons.arrow_forward_ios_rounded, color: blueCard ? AppUI.white : AppUI.blue61,))
             ],
           ),
           const SizedBox(height: 34,),
