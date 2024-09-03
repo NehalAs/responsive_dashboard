@@ -20,10 +20,10 @@ class SideMenu extends StatelessWidget {
             const SliverToBoxAdapter(child: SizedBox(height: 20,),),
             const SliverToBoxAdapter(
                 child: UserInfoItem(
-              icon: Assets.svgsLekan,
-              title: 'Lekan Okeowo',
-              subTitle: 'demo@gmail.com',
-            )),
+                              icon: Assets.svgsLekan,
+                              title: 'Lekan Okeowo',
+                              subTitle: 'demo@gmail.com',
+                            )),
             const SliverToBoxAdapter(child: SizedBox(height: 20,),),
             const SideMenuItemsListView(),
             SliverFillRemaining(

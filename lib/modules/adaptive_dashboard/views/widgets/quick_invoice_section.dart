@@ -50,10 +50,12 @@ class QuickInvoiceSection extends StatelessWidget {
               height: 72,
               child: ListView.separated(
                   scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) => const UserInfoItem(
-                      icon: Assets.svgsLekan,
-                      title: 'Madrani Andi',
-                      subTitle: 'Madraniadi20@gmail'),
+                  itemBuilder: (context, index) => IntrinsicWidth(
+                    child: const UserInfoItem(
+                        icon: Assets.svgsLekan,
+                        title: 'Madrani Andi',
+                        subTitle: 'Madraniadi20@gmail'),
+                  ),
                   separatorBuilder: (context, index) => const SizedBox(
                         width: 12,
                       ),
