@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:responsive/modules/adaptive_dashboard/views/quick_invoice_form.dart';
+import 'package:responsive/modules/adaptive_dashboard/views/widgets/custom_text_field.dart';
+import 'package:responsive/modules/adaptive_dashboard/views/widgets/latest_transaction.dart';
 import 'package:responsive/modules/adaptive_dashboard/views/widgets/user_info_item.dart';
 import 'package:responsive/utils/app_ui.dart';
 
@@ -39,27 +42,10 @@ class QuickInvoiceSection extends StatelessWidget {
           const SizedBox(
             height: 24,
           ),
-          Text(
-            'Latest Transaction',
-            style: Styles.textStyle16w500(context),
-          ),
-          const SizedBox(
-            height: 12,
-          ),
-          SizedBox(
-              height: 72,
-              child: ListView.separated(
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, index) => IntrinsicWidth(
-                    child: const UserInfoItem(
-                        icon: Assets.svgsLekan,
-                        title: 'Madrani Andi',
-                        subTitle: 'Madraniadi20@gmail'),
-                  ),
-                  separatorBuilder: (context, index) => const SizedBox(
-                        width: 12,
-                      ),
-                  itemCount: 5)),
+          const LatestTransaction(),
+          const Divider(height: 48,color: AppUI.whiteF1,),
+          const QuickInvoiceForm(),
+          const SizedBox(height: 24,),
         ],
       ),
     );

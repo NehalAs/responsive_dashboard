@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive/modules/adaptive_dashboard/models/user_Info_model.dart';
 import 'package:responsive/shared/widgets/custom_svg_widget.dart';
 import 'package:responsive/utils/app_ui.dart';
 import 'package:responsive/utils/styles.dart';
@@ -6,13 +7,11 @@ import 'package:responsive/utils/styles.dart';
 class UserInfoItem extends StatelessWidget {
   const UserInfoItem(
       {super.key,
-      required this.icon,
-      required this.title,
-      required this.subTitle});
+        required this.userInfoModel
+      });
 
-  final String icon;
-  final String title;
-  final String subTitle;
+  final UserInfoModel userInfoModel;
+
 
   @override
   Widget build(BuildContext context) {
@@ -20,13 +19,13 @@ class UserInfoItem extends StatelessWidget {
       color: AppUI.whiteFA,
       elevation: 0,
       child: ListTile(
-          leading: CustomSvg(icon: icon),
+          leading: CustomSvg(icon: userInfoModel.icon),
           title: Text(
-            title,
+            userInfoModel.title,
             style: Styles.textStyle16w600(context),
           ),
           subtitle: Text(
-            subTitle,
+            userInfoModel.subTitle,
             style: Styles.textStyle12w400(context),
           )),
     );
